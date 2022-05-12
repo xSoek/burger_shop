@@ -38,3 +38,43 @@ body {
     max-width: var(--maxWidth);
     margin: 0 auto;
 }
+
+/* Inicio header */
+
+header .nav_top {
+    background-color: var(--secondaryColor);
+    padding: var(--marginGrid);
+}
+
+header .nav_top .container {
+    /* Both of them do the same */
+    display: flex;
+    justify-content: space-around;
+    /*display: inline-block;*/
+}
+
+header .nav_top a {
+    text-decoration: none;
+}
+
+header .nav_top a span{
+    color: white;
+    display: none;
+}
+
+header .nav_top a i {
+    font-size: calc(var(--fontSize)*1.4);
+    color: var(--mainColor);
+}
+
+/*768px*/
+@media (min-width: 48em) {  
+    header .nav_top a span {
+        display: inline;
+    }  
+
+    header .nav_top .container {
+        justify-content: space-between;
+    }
+}
+/* final header*/
