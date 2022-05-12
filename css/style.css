@@ -11,3 +11,30 @@ img {
     display: block;
     height: auto;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --mainFont: 'Montserrat', sans-serif;
+    --secondaryFont: 'Handlee', cursive;
+    
+    --fontSize: 1em;
+
+    --mainColor: #fa573a;
+    --secondaryColor: #21242e;
+    
+    --maxWidth: 1100px;
+    --marginGrid: 1em;
+}
+
+body {
+    font-family: var(--mainFont);
+    font-size: var(--fontSize);
+}
+
+.container {
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+}
