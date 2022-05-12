@@ -1,0 +1,122 @@
+@import url(../variables.css);
+
+header .nav_top {
+    background-color: var(--secondaryColor);
+    padding: var(--marginGrid);
+}
+
+header .nav_top .container {
+    /* Both of them do the same */
+    display: flex;
+    justify-content: space-around;
+    /*display: inline-block;*/
+}
+
+header .nav_top a {
+    text-decoration: none;
+}
+
+header .nav_top a span{
+    color: white;
+    display: none;
+}
+
+header .nav_top a i {
+    font-size: calc(var(--fontSize)*1.4);
+    color: var(--mainColor);
+}
+nav {
+    padding-top: 30px;
+}
+
+nav .container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px auto;
+    grid-template-areas: 
+    "logo  menu-icon"
+    "menu menu";
+}
+
+nav div figure {
+    grid-area: logo;
+    width: 150px;
+    margin-left: 50px;
+}
+
+nav div .hamburguesa {
+    grid-area: menu-icon;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+nav div ul {
+    grid-area: menu;
+    width: 100%;
+}
+nav div ul li {
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav div ul hr {
+    width: 90%;
+    border: 1px solid var(--brigthGray);
+}
+
+nav div ul li a{
+    text-decoration: none;
+    color: var(--brigthGray);
+}
+
+nav div ul li .active{
+    text-decoration: none;
+    color: var(--mainColor);
+}
+
+nav div .hamburguesa div{
+    margin-right: 50px;
+    width: 35px;
+    height: 13px;
+    border-top: 3px solid var(--brigthGray);
+}
+
+/*768px*/
+@media (min-width: 48em) {  
+    :root {
+        --maxWidth: 1100px;
+    }
+    header .nav_top a span {
+        display: inline;
+    }  
+
+    header .nav_top .container {
+        justify-content: space-between;
+    }
+
+    nav .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav div .hamburguesa div{
+        display: none;
+    }
+
+    nav div ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    nav div ul li {
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    nav div ul hr {
+        display: none;
+    }
+}

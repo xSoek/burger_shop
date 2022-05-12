@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css);
+
+:root {
+    --mainFont: 'Montserrat', sans-serif;
+    --secondaryFont: 'Handlee', cursive;
+    
+    --fontSize: 1em;
+
+    --mainColor: #fa573a;
+    --secondaryColor: #21242e;
+    --brigthGray: rgb(197, 197, 197);
+    
+    --maxWidth: 600px;
+    --marginGrid: 1em;
+}

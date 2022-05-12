@@ -1,0 +1,25 @@
+@import url(./reset.css);
+
+* {
+    box-sizing: border-box
+}
+
+img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--mainFont);
+    font-size: var(--fontSize);
+}
+
+.container {
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+}
