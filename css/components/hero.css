@@ -1,0 +1,89 @@
+@import url(../variables.css);
+
+.hero  {
+
+    background-image: url("../../imgs/appImages/fondo.jpg");
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.hero>div {
+    width: 100%;
+    background:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url("../../imgs/appImages/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px var(--marginGrid);
+    line-height: 2;
+}
+
+.hero>div>h2 {
+    color: white;
+    font-family: var(--secondaryFont);
+    font-size: calc(var(--fontSize)*2);
+}
+
+.hero>div>h3 {
+    color: var(--primaryColor);
+    font-family: var(--primaryFont);
+}
+
+.hero>div>h4 {
+    color: white;
+    font-family: var(--primaryFont);
+}
+
+.hero>div>div>ul {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hero>div>div>button {
+    margin-top: 5px;
+    padding: 15px;
+    border: none;
+    color: white;
+    font-family: var(--primaryFont);
+    background-color: var(--primaryColor);
+    transition: background-color 0.5s linear;
+}
+
+.hero>div>div>button:hover {
+    cursor: pointer;
+    background-color: rgb(255, 76, 22);
+}
+
+.hero>div>div>button:active {
+    background-color: rgb(206, 48, 0);
+}
+
+.hero>div>div>button>i {
+    padding-left: 5px;
+}
+
+.hero>div>div>ul>li {
+    color: white;
+    font-size: calc(var(--fontSize)*1.7);
+    height: auto;
+}
+
+.hero>div>div {
+    width: fit-content;
+}
+
+
+/*768px*/
+@media (min-width: 48em) {  
+    .hero  {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url("../../imgs/appImages/fondo.jpg");
+        background-position: center;
+    }
+
+    .hero>div {
+        padding: 100px 0;
+        padding-left: var(--marginGrid);
+        background:  none;
+    }
+}

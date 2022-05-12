@@ -7,10 +7,10 @@
     
     --fontSize: 1em;
 
-    --mainColor: #fa573a;
+    --primaryColor: #fa573a;
     --secondaryColor: #21242e;
     --brigthGray: rgb(197, 197, 197);
     
-    --maxWidth: 600px;
+    --maxWidth: 1100px;
     --marginGrid: 1em;
 }

@@ -23,13 +23,15 @@ header .nav_top a span{
 
 header .nav_top a i {
     font-size: calc(var(--fontSize)*1.4);
-    color: var(--mainColor);
+    color: var(--primaryColor);
 }
 nav {
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 nav .container {
+    padding: var(--marginGrid);
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 50% 50%;
@@ -41,8 +43,11 @@ nav .container {
 
 nav div figure {
     grid-area: logo;
+}
+
+nav div figure img{
     width: 150px;
-    margin-left: 50px;
+    padding-left: 5px;
 }
 
 nav div .hamburguesa {
@@ -62,7 +67,7 @@ nav div ul li {
 }
 
 nav div ul hr {
-    width: 90%;
+    width: 95%;
     border: 1px solid var(--brigthGray);
 }
 
@@ -73,7 +78,7 @@ nav div ul li a{
 
 nav div ul li .active{
     text-decoration: none;
-    color: var(--mainColor);
+    color: var(--primaryColor);
 }
 
 nav div .hamburguesa div{
@@ -85,21 +90,24 @@ nav div .hamburguesa div{
 
 /*768px*/
 @media (min-width: 48em) {  
-    :root {
-        --maxWidth: 1100px;
-    }
     header .nav_top a span {
         display: inline;
     }  
-
+    
     header .nav_top .container {
         justify-content: space-between;
     }
-
+    
+    nav {
+        padding: 10px 0px 40px;
+    }
+    
     nav .container {
+        padding-left: 0;
         display: flex;
         justify-content: space-between;
     }
+
 
     nav div .hamburguesa div{
         display: none;
