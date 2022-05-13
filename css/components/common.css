@@ -1,17 +1,19 @@
 
-section h2 {
+
+/* TITLES WITH SPAN & BOTTOM ICON*/
+
+section>div>h2 {
     color: black;
     font-family: var(--secondaryFont);
     font-size: 200%;
     text-align: center;
 }
 
-
-section h2 span {
+section>div>h2 span {
     color: var(--primaryColor);
 }
 
-section .underline {
+section>div .underline {
     position: relative;
     width: 100px;
     margin: 0 auto;
@@ -21,10 +23,12 @@ section .underline {
     padding-bottom: 20px;
 }
 
-section .underline hr {
+section>div .underline hr {
     position: absolute;
     width: 100%;
     top: -1px;
     border-color: var(--primaryColor);
    
 }
+
+/* ------------------------------------------------------------------------------ */

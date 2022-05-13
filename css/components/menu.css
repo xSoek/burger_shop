@@ -1,0 +1,48 @@
+@import url(../variables.css);
+
+section {
+    color: white;
+    background-color: var(--secondaryColor);
+}
+
+section div .menu-grid {}
+
+section div .menu-grid ul {
+    padding: 0 4em
+}
+
+section div .menu-grid ul li {
+    padding: 1em 0 1em 1em;
+}
+
+section>div>.menu-grid>ul li:first-child {
+    background-color: var(--primaryColor);
+    border-radius: .15em;
+}
+
+section div .menu-grid div h2 {
+    position: relative;
+    line-height: 2.5em;
+    padding: 0 4em
+}
+
+section div .menu-grid div h2::before {
+    content: "";
+    position: absolute;
+    left: 4em;
+    bottom: 0;
+    height: 1px;
+    width: 10%;
+    
+    border-bottom: 2px solid var(--primaryColor);
+}
+
+section div .menu-grid div p {
+    color: gray;
+}
+
+section div .menu-grid>div>p {
+    margin-top: .5em;
+    padding: 0 4em;
+    line-height: 1.2em;
+}
