@@ -24,13 +24,6 @@ section {
     line-height: 1.2em;
 }
 
-#ourservices .grid article a {
-    text-decoration: none;
-    font-family: var(--mainFont);
-    font-weight: 700;
-    color: var(--primaryColor);
-}
-
 #ourservices .grid article div{
     width: fit-content;
     padding: .5em;
