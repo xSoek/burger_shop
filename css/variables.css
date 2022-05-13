@@ -1,0 +1,13 @@
+:root {
+    --mainFont: 'Montserrat', sans-serif;
+    --secondaryFont: 'Handlee', cursive;
+    
+    --fontSize: 1em;
+
+    --primaryColor: #fa573a;
+    --secondaryColor: #21242e;
+    --brigthGray: rgb(197, 197, 197);
+    
+    --maxWidth: 1100px;
+    --marginGrid: 1em;
+}

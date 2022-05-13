@@ -1,0 +1,138 @@
+@import url(../variables.css);
+
+header .nav_top {
+    background-color: var(--secondaryColor);
+    padding: var(--marginGrid);
+}
+
+header .nav_top .container {
+    /* Both of them do the same */
+    display: flex;
+    justify-content: space-around;
+    /*display: inline-block;*/
+}
+
+header .nav_top a {
+    text-decoration: none;
+}
+
+header .nav_top a span{
+    color: white;
+    display: none;
+}
+
+header .nav_top a i {
+    font-size: calc(var(--fontSize)*1.4);
+    color: var(--primaryColor);
+}
+nav {
+    padding-top: 1em;
+    padding-bottom: 30px;
+}
+
+nav .container {
+    padding: var(--marginGrid);
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "logo  menu-icon"
+    "menu menu";
+}
+
+nav div figure {
+    grid-area: logo;
+}
+
+nav div figure img{
+    width: 150px;
+    padding-left: 5px;
+}
+
+nav div .hamburguesa {
+    grid-area: menu-icon;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+nav div .hamburguesa div{
+    cursor: pointer;
+    width: 2em;
+    height: .75em;
+    margin-right: 50px;
+    border-top: 3px solid var(--brigthGray);
+}
+
+nav div ul {
+    grid-area: menu;
+    width: 100%;
+}
+nav div ul li {
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav div ul hr {
+    width: 95%;
+    border: 1px solid var(--brigthGray);
+}
+
+nav div ul li a{
+    display: block;
+    text-decoration: none;
+    color: var(--brigthGray);
+}
+
+nav div ul li :is(.active, a:hover){
+    text-decoration: none;
+    color: var(--primaryColor);
+}
+
+
+/*768px*/
+@media (min-width: 48em) {  
+    header .nav_top a span {
+        display: inline;
+    }  
+    
+    header .nav_top .container {
+        justify-content: space-between;
+    } 
+}
+
+/*1004px*/
+@media (min-width: 62.750em) {
+    nav {
+        padding: 10px 0px 20px;
+    }
+    
+    nav .container {
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    nav div .hamburguesa {
+        display: none;
+    }
+
+    nav div ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    nav div ul li {
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    nav div ul hr {
+        display: none;
+    }
+}

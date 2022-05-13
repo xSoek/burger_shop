@@ -1,0 +1,29 @@
+@import url(../variables.css);
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--secondaryColor);
+    color: white;
+    padding: var(--marginGrid);
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: var(--primaryColor);
+}
+
+.goUp {
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    font-size: 2em;
+}
+.goUp a {
+    color: var(--primaryColor);
+}
