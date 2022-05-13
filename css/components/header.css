@@ -26,7 +26,7 @@ header .nav_top a i {
     color: var(--primaryColor);
 }
 nav {
-    padding-top: 30px;
+    padding-top: 1em;
     padding-bottom: 30px;
 }
 
@@ -35,7 +35,7 @@ nav .container {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 100px auto;
+    grid-template-rows: auto auto;
     grid-template-areas: 
     "logo  menu-icon"
     "menu menu";
@@ -54,7 +54,16 @@ nav div .hamburguesa {
     grid-area: menu-icon;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     align-items: flex-end;
+}
+
+nav div .hamburguesa div{
+    cursor: pointer;
+    width: 2em;
+    height: .75em;
+    margin-right: 50px;
+    border-top: 3px solid var(--brigthGray);
 }
 
 nav div ul {
@@ -72,21 +81,16 @@ nav div ul hr {
 }
 
 nav div ul li a{
+    display: block;
     text-decoration: none;
     color: var(--brigthGray);
 }
 
-nav div ul li .active{
+nav div ul li :is(.active, a:hover){
     text-decoration: none;
     color: var(--primaryColor);
 }
 
-nav div .hamburguesa div{
-    margin-right: 50px;
-    width: 35px;
-    height: 13px;
-    border-top: 3px solid var(--brigthGray);
-}
 
 /*768px*/
 @media (min-width: 48em) {  
@@ -96,20 +100,24 @@ nav div .hamburguesa div{
     
     header .nav_top .container {
         justify-content: space-between;
-    }
-    
+    } 
+}
+
+/*1004px*/
+@media (min-width: 62.750em) {
     nav {
-        padding: 10px 0px 40px;
+        padding: 10px 0px 20px;
     }
     
     nav .container {
         padding-left: 0;
+        padding-right: 0;
         display: flex;
         justify-content: space-between;
     }
 
 
-    nav div .hamburguesa div{
+    nav div .hamburguesa {
         display: none;
     }
 
