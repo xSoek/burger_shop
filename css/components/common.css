@@ -1,0 +1,30 @@
+
+section h2 {
+    color: black;
+    font-family: var(--secondaryFont);
+    font-size: 200%;
+    text-align: center;
+}
+
+
+section h2 span {
+    color: var(--primaryColor);
+}
+
+section .underline {
+    position: relative;
+    width: 100px;
+    margin: 0 auto;
+    font-weight: 700;
+    color: var(--primaryColor);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+section .underline hr {
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    border-color: var(--primaryColor);
+   
+}
