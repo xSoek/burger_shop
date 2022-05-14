@@ -75,13 +75,13 @@ section div .menu-grid .menu-list li>div p {
     .menu-grid {
         column-gap: 4em;
         row-gap: 2em;
-        padding: 2em 0;
+        padding: 2em 1em;
         display: grid;
         grid-template-columns: 2fr 5fr;
         grid-template-rows: 1fr, 1fr;
     }
     section div .menu-grid ul {
-        padding: 0 0 0 0;
+        padding: 0;
         grid-column: 1/2;
     }
     section div .menu-grid .menu-list ul li {
@@ -105,6 +105,6 @@ section div .menu-grid .menu-list li>div p {
     }
 
     section div .menu-grid .menu-list li>div {
-        padding: 0 1em;
+        padding: 0 1.5em;
     }
 }
