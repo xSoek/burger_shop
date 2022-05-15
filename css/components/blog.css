@@ -1,0 +1,71 @@
+#ourBlog div ul {
+    padding-bottom: 4em;
+}
+
+article {
+    position: relative;
+    width: fit-content;
+    padding: 2em;
+}
+
+
+article>div>div {
+    position: absolute;
+    padding: 1.5% 4.5%;
+    width: fit-content;
+    background-color: #fa573ab0;
+}
+
+article>div>div>h2 {
+    line-height: 1.6em;
+    text-align: center;
+    font-family: var(--mainFont);
+    font-weight: 700;
+    color: white;
+}
+
+article div:nth-child(2) {
+    padding: 1.5em 0.25em 0 .5em;
+    
+}
+
+article div:nth-child(2) h2{
+    font-size: calc(var(--fontSize)*1.25);
+    font-family: var(--mainFont);
+    font-weight: 700;
+    margin-bottom: .5em;
+}
+
+article div:nth-child(2) h3{
+    font-family: var(--mainFont);
+    font-weight: 700;
+    color: var(--primaryColor);
+    margin-bottom: .5em;
+}
+
+article div:nth-child(2) p{
+    font-family: var(--mainFont);
+    font-size: calc(var(--fontSize)*.9);
+    color: gray;
+    margin-bottom: 1.5em;
+}
+
+#ourBlog div ul {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width: 62.750em) {
+    article {
+        position: relative;
+        width: fit-content;
+        padding: 2em 0;
+    }
+    #ourBlog div ul {
+        padding: 0 1em;
+        gap: 2em;
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+
+}
