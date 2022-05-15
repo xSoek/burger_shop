@@ -1,0 +1,28 @@
+@import url(./reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css);
+
+* {
+    box-sizing: border-box
+}
+
+img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--mainFont);
+    font-size: var(--fontSize);
+}
+
+.container {
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+}
