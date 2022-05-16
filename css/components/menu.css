@@ -1,6 +1,11 @@
+
+body {
+
+    background-color: var(--secondaryColor);
+}
+
 section {
     color: white;
-    background-color: var(--secondaryColor);
     padding: 3em 0;
 }
 
