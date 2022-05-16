@@ -1,6 +1,11 @@
+
+body {
+
+    background-color: var(--secondaryColor);
+}
+
 section {
     color: white;
-    background-color: var(--secondaryColor);
     padding: 3em 0;
 }
 
@@ -13,12 +18,12 @@ section div .menu-grid ul li {
 }
 
 
-section>div>.menu-grid>ul li:first-child {
+section>div>.menu-grid aside ul li:first-child {
     background-color: var(--primaryColor);
     border-radius: .15em;
 }
 
-section>div>.menu-grid>.offers {
+section>div>.menu-grid>aside .offers {
     padding: 2em 2em 1em 2em;
 }
 
