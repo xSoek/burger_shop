@@ -36,10 +36,43 @@ section>div .underline hr {
 /* BUTTON WITH NO BORDERS */
 
 .link {
+    display: block;
+    width: fit-content;
+    padding-top: 1em;
     text-decoration: none;
     font-family: var(--mainFont);
     font-weight: 700;
     color: var(--primaryColor);
+}
+
+/* ------------------------------------------------------------------------------ */
+
+/* BUTTON WITH BACKGROUND */
+
+.button-bckg {
+    padding: 15px;
+    border: none;
+    color: white;
+    font-family: var(--primaryFont);
+    background-color: var(--primaryColor);
+    transition: background-color 0.15s linear;
+    border: 1px solid var(--primaryColor);
+}
+
+.button-bckg:hover {
+    cursor: pointer;
+    color: var(--primaryColor);
+    background-color: rgba(255, 60, 0, 0);
+}
+
+
+.button-bckg i {
+    padding-left: 5px;
+}
+
+.button-bckg:hover i {
+    transition: 0.5s ease;
+    transform: translateX(5px);
 }
 
 /* ------------------------------------------------------------------------------ */
