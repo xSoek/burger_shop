@@ -1,0 +1,102 @@
+section {
+    padding-bottom: 4em;
+}
+
+section .team-view {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+article {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content:center ;
+}
+
+article img {
+    width: 400px;
+}
+
+article .bckg-article {
+    width: 400px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.603);
+    position: absolute;
+    transition: transform 1s linear;
+    transform: translateY(80%);
+}
+
+article .article-info {
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    color: white;
+    transition: transform 1s linear;
+    transform: translateY(80%);
+}
+
+article .article-info h2{
+    margin-top: 1.5em;
+    padding-bottom: 20px;
+    position: relative;
+    text-align: center;
+}
+
+article .article-info h2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: 3em;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-bottom: 2px solid var(--primaryColor);
+}
+
+article .article-info h3{
+    padding-top: 20px;
+    text-align: center;
+}
+
+article .article-info ul{
+    display: flex;
+    width: 90%;
+    padding-top: 5em;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+article .article-info ul li {
+    border-radius: 50%;
+    border: 1px solid;
+    padding: .8em;
+}
+
+article .article-info ul li i {
+    color: white;
+    font-size: 1.5em;
+}
+
+article:hover .bckg-article{
+    transform: translateY(0%);
+}
+
+article:hover .article-info{
+    transform: translateY(35%);
+}
+
+@media (min-width: 48em) {
+    section .team-view {
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+@media (min-width: 62.750em) {
+    section .team-view {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+}
