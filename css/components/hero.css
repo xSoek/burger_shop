@@ -1,7 +1,7 @@
 @import url(../variables.css);
 
 .hero  {
-    background-image: url("../../imgs/appImages/fondo.jpg");
+    background-image: url("../../images/fondo.jpg");
     background-color: #999;
     background-blend-mode: multiply;
     background-position: center;
