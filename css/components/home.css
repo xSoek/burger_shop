@@ -32,11 +32,49 @@ section {
     border: 1px solid var(--primaryColor);
 }
 
-#ourservices .grid article h3{
+section h3{
     font-family: var(--mainFont);
     font-weight: 700;
 }
 
+section h4{
+    color: var(--primaryColor);
+    margin: .5em 0;
+}
+
+section .flex {
+    padding: 0 var(--marginGrid);
+}
+
+#aboutUs figure {
+    width: 85%;
+    margin: 2em auto;
+}
+
+#aboutUs figure .marco {
+    border: 3px solid var(--primaryColor);
+    transform: rotateZ(10deg);
+    transition: transform .5s linear;
+}
+
+#aboutUs figure .marco img{
+    transition: transform .5s linear;
+    transform: rotateZ(-10deg);
+}
+
+#aboutUs figure:hover :is(.marco, .marco img) {
+    transform: rotateZ(0deg);
+}
+
+#aboutUs .flex {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#aboutUs .flex .column:last-child p{
+    padding-bottom: 50px;
+}
 
 @media (min-width: 48em) {
     #ourservices .grid {
@@ -46,6 +84,22 @@ section {
     #ourservices .grid article:last-child{
         grid-column: 1/3;
     }
+
+    #aboutUs .flex {
+        flex-direction: row;
+    }
+
+    #aboutUs .flex div{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #aboutUs .flex .column:last-child{
+        padding-left: 3em;
+    }
+    
 }
 
 /*1004px*/

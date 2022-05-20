@@ -1,7 +1,7 @@
 @import url(../variables.css);
 
 .hero  {
-    background-image: url("../../imgs/appImages/fondo.jpg");
+    background-image: url("../../images/fondo.jpg");
     background-color: #999;
     background-blend-mode: multiply;
     background-position: center;
@@ -42,39 +42,13 @@
     justify-content: space-between;
 }
 
-.hero>div>div>button {
-    margin-top: 5px;
-    padding: 15px;
-    border: none;
-    color: white;
-    font-family: var(--primaryFont);
-    background-color: var(--primaryColor);
-    transition: background-color 0.15s linear;
-    border: 1px solid var(--primaryColor);
-}
-
-.hero>div>div>button:hover {
-    cursor: pointer;
-    color: var(--primaryColor);
-    background-color: rgba(255, 60, 0, 0);
-}
-
-
-.hero>div>div>button>i {
-    padding-left: 5px;
-}
-
-.hero>div>div>button:hover i {
-    transition: 0.5s ease;
-    transform: translateX(5px);
-}
-
 .hero>div>div>ul>li>a {
     color: white;
     font-size: calc(var(--fontSize)*1.7);
 }
 
 .hero>div>div {
+    margin-top: 25px;
     width: fit-content;
 }
 
