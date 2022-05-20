@@ -17,8 +17,17 @@ section div .menu-grid ul li {
     padding: 1em 2em;
 }
 
+section div .menu-grid aside ul li {
+    margin: .25em 0;
+}
 
 section>div>.menu-grid aside ul li:first-child {
+    background-color: var(--primaryColor);
+    border-radius: .15em;
+}
+
+section>div>.menu-grid aside ul li:hover {
+    cursor: pointer;
     background-color: var(--primaryColor);
     border-radius: .15em;
 }
