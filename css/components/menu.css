@@ -43,6 +43,7 @@ section div .menu-grid div h2 {
     font-family: var(--mainFont);
     font-weight: 700;
     font-size: calc(var(--fontSize));
+    margin-bottom: 1em;
 }
 
 section div .menu-grid div h2::before {
@@ -70,6 +71,8 @@ section div .menu-grid .menu-list ul {
     flex-direction: column;
     width: fit-content;
     margin: 0 auto;
+    height: 100%;
+    justify-content: space-around;
 }
 
 
